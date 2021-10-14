@@ -1,7 +1,16 @@
-print("                                                      "
-      "                     STONE, PAPER AND SCISSOR GAME")
-print("\n\n")
+print("""   _____ _                         _____                                          _      _____      _                    
+  / ____| |                       |  __ \                                        | |    / ____|    (_)                   
+ | (___ | |_ ___  _ __   ___      | |__) |_ _ _ __   ___ _ __      __ _ _ __   __| |   | (___   ___ _ ___ ___  ___  _ __ 
+  \___ \| __/ _ \| '_ \ / _ \     |  ___/ _` | '_ \ / _ \ '__|    / _` | '_ \ / _` |    \___ \ / __| / __/ __|/ _ \| '__|
+  ____) | || (_) | | | |  __/_    | |  | (_| | |_) |  __/ |      | (_| | | | | (_| |    ____) | (__| \__ \__ \ (_) | |   
+ |_____/ \__\___/|_| |_|\___( )   |_|   \__,_| .__/ \___|_|       \__,_|_| |_|\__,_|   |_____/ \___|_|___/___/\___/|_|   
+                            |/               | |                                                                         
+                                             |_|                                                                         
+                                             
+                                             """)
+
 from random import *
+
 
 def Pic(num):
     if num == 0:
@@ -62,11 +71,11 @@ while n:
     n -= 1
 
 if your_score > comp_score:
-    print("HURRY!!! YOU WIN")
+    print("HURRY!!! YOU WIN 😃 😎")
 elif your_score == comp_score:
-    print("OHHH!!! GAME TIED")
+    print("OHHH!!! GAME TIED 😐")
 else:
-    print("SORRY YOU LOSE")
+    print("SORRY YOU LOSE 😭")
 
 print(f"Your score is {your_score}")
 print(f"Computer score is {comp_score}")
