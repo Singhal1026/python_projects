@@ -57,15 +57,15 @@ def coffee_maker(coff_name, coffee, milk, water, money):
 def coins(coff_name):
     if water < req_water[coff_name]:
         print("Sorry there is not enough water.")
-        return
+        return True
 
     elif coffee < req_coffee[coff_name]:
         print("Sorry there is not enough coffee.")
-        return
+        return True
 
     elif milk < req_milk[coff_name]:
         print("Sorry there is not enough milk.")
-        return
+        return True
 
     print("Please insert coins!")
     quarters = int(input("How many quarters? "))
@@ -98,17 +98,17 @@ Money: $ {money}
 
     elif need == "expresso":
         check = coins("expresso")
-        if check != False:
+        if check != False and check != True:
             milk, water, coffee, money = coffee_maker("expresso", coffee, milk, water, money)
 
     elif need == "latte":
         check = coins("latte")
-        if check != False:
+        if check != False and check != True:
             milk, water, coffee, money = coffee_maker("latte", coffee, milk, water, money)
 
     elif need == "cappuccino":
         check = coins("cappuccino")
-        if check != False:
+        if check != False and check != True:
             milk, water, coffee, money = coffee_maker("cappuccino", coffee, milk, water, money)
 
     elif need == "help":
